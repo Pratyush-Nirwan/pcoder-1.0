@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+  background-color: white;
+  font-family: 'Courier Prime', monospace;
+  transition: background-color 0.5s ease;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.top {
+  margin-top: 10%;
+  text-align: center;
+  line-height: 5mm;
+}
+
+#time {
+  position: absolute;
+  top: 0.1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.transparent-button {
+  background: transparent;
+  border: none;
+}
+
+.transparent-button:hover {
+  cursor: pointer;
+}
+
+.fa-moon {
+  color: black;
+}
+
+.fa-sun {
+  color: white;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#social-media-icons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+#social-media-icons button {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#social-media-icons form {
+  display: inline-block;
+}
+
+#social-media-dropdown {
+  display: none;
+}
+
+.fa-instagram,
+.fa-linkedin,
+.fa-github,
+.fa-mug-hot {
+  color: black;
+}
+
+.dark-mode .fa-instagram,
+.dark-mode .fa-linkedin,
+.dark-mode .fa-github,
+.dark-mode .fa-mug-hot {
+  color: white;
+}
+
+#my-photo-darkmode {
+  display: none;
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+
+}
+
+#my-photo-lightmode {
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+}
+
+
+#photo-container {
+  text-align: center;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-top: 1em;
+}
+
+#quote {
+  text-align: left;
+}
+
+#author {
+  text-align: left;
+}
+
+#quote:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.dark-mode #quote:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#name:hover {
+  cursor: pointer;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.top {
+  padding-left: 25em;
+  padding-right: 25em;
+  text-align: left;
+}
+
+#name {
+  font-size: 2.5em;
+}
+
+.intro_name {
+  line-height: 1em;
+}
+
+#name::after {
+  content: "▍";
+  animation: blink 1s infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.bw-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 1em;
+  font-family: 'Courier Prime', monospace;
+  margin: 0 4em;
+}
+
+.bw-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.dark-mode .bw-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  padding: 1em;
+  font-family: 'Courier Prime', monospace;
+  margin: 0 4em;
+}
+
+.dark-mode .bw-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.detail-buttons {
+  padding-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+
+#terminal-window {
+  margin-top: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 7em;
+  margin-right: 7em;
+  margin-bottom: 3em;
+}
+
+#terminal-header {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: left;
+}
+
+.terminal-btn {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  margin: 0 5px;
+}
+
+#terminal-full-btn {
+  background-color: white;
+  border: 1px solid white;
+}
+
+#terminal-hollow-btn {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.dark-mode #terminal-header {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode #terminal-window {
+  border: 1px solid white;
+}
+
+.dark-mode #terminal-full-btn {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.dark-mode #terminal-hollow-btn {
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+#console {
+  margin: 1em;
+}
+
+#blog-posts {
+  padding-right: 7em;
+  padding-left: 7em;
+}
+
+.blog-post {
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  vertical-align: top;
+}
+
+.dark-mode .blog-post {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.dark-mode .blog-post img {
+  border: 1px solid black;
+
+}
+
+.blog-post:hover {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .blog-post:hover {
+  background-color: white;
+  color: black;
+}
+
+.blog-post h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#blog-post-title {
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+#credits {
+  text-align: center;
+}
+
+.project-card {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+
+}
+
+.dark-mode .project-card {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+}
+.dark-mode .project-card:hover{
+  background-color: white;
+  color: black;
+}
+.project-card:hover {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+
+#college-projects,
+#personal-projects,
+#blog-post-slider {
+  width: max-content;
+}
+
+#college-projects a,
+#personal-projects a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em;
+}
+
+.project-card a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.project-card-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#projects {
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+.slider-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    font-size: 14px;
+  }
+
+  .intro {
+    display: block;
+    text-align: center;
+  }
+
+  .top {
+    margin-top: 20%;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  #quote {
+    text-align: center;
+  }
+
+  .detail-buttons {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dark-mode .bw-btn {
+    padding: 0.5em;
+    margin: 0 0.5em;
+    font-size: 0.7em;
+  }
+
+  .bw-btn {
+    padding: 0.5em;
+    margin: 0 0.5em;
+    font-size: 0.7em;
+  }
+
+  #terminal-window {
+    margin-top: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+  }
+
+  #projects {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #name {
+    font-size: 1.5em;
+  }
+
+  #my-photo-darkmode,
+  #my-photo-lightmode {
+    width: 50%;
+    height: auto;
+  }
+
+  .sl-titles {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  #social-media-icons {
+    position: relative;
+    top: unset;
+    left: unset;
+    padding-top: 1em;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #time {
+    position: absolute;
+    left: 4em;
+    z-index: 1000;
+    overflow: visible;
+    white-space: nowrap;
+  }
+
+  #blog-post-title {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #blog-posts {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .blog-post {
+    width: 15em;
+  }
+
+  .blog-post p {
+    font-size: 0.9em;
+  }
+
+  .blog-post img {
+    width: 200;
+    height: auto;
+  }
+}
+
+/* created by Pratyush with ❤️ */
